@@ -1,0 +1,56 @@
+body{
+    background-image: url(weather2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cityName{
+    color: black;
+}
+.tempCard {
+    height: 35vh;
+    width: 45vh;
+    border: 1px solid black;
+    border-radius: 1vh;
+    margin-right: 20px;
+    background-image: url('temp.png');
+    background-size: contain;
+    background-color: #ffb743c7;
+    background-repeat: no-repeat;
+    font-size: large;
+    color: black;
+}
+.windCard {
+    height: 35vh;
+    width: 41vh;
+    border: 1px solid black;
+    border-radius: 1vh;
+    margin-right: 20px;
+    background-image: url('windSpeed.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: large;
+    color: black;
+}
+
+#temp {
+    margin: 3vh;
+    margin-left: 15vh;
+}
+
+#humidity {
+    margin: 7vh;
+    margin-left: 16vh;
+}
+
+#feelslike {
+    margin-left: 16vh;
+}
+#windSpeed {
+    margin: 5vh;
+}
+#country {
+    margin: 5vh;
+}
+#region {
+    margin: 5vh;
+}
