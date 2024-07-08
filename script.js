@@ -13,7 +13,7 @@ const getWeather =  () => {
       e.preventDefault();
       let value = searchInpt.value;
       console.log(value);
-      let data = await fetch(`http://api.weatherapi.com/v1/current.json?key=89a8c580db13441ea4f155129240707&q=${value}`);
+      let data = await fetch(`https://api.weatherapi.com/v1/current.json?key=89a8c580db13441ea4f155129240707&q=${value}`);
       data = await data.json();
       console.log(data);
       temperature.innerHTML = "<b>Temperature</b> " +data.current.temp_c + "&#8451";
