@@ -1,27 +1,50 @@
-body{
+body {
     background-image: url(weather2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-#cityName{
+.cityName{
+    margin-top: 20px;
+}
+#cityName {
     color: black;
 }
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tempCard {
-    height: 35vh;
-    width: 45vh;
+    display: flex;
+    flex-direction: column;
+    height: 47vh;
+    width: 35vw;
     border: 1px solid black;
     border-radius: 1vh;
     margin-right: 20px;
-    background-image: url('temp.png');
     background-size: contain;
     background-color: #ffb743c7;
     background-repeat: no-repeat;
     font-size: large;
     color: black;
 }
+
+.image {
+    height: 30%;
+    width: 30%;
+    margin: 5px;
+    display: flex;
+}
+#text{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
 .windCard {
-    height: 35vh;
-    width: 41vh;
+    height: 47vh;
+    width: 35vw;
     border: 1px solid black;
     border-radius: 1vh;
     margin-right: 20px;
@@ -33,24 +56,47 @@ body{
 }
 
 #temp {
-    margin: 3vh;
-    margin-left: 15vh;
+    margin-left: 8vh;
 }
 
 #humidity {
     margin: 7vh;
-    margin-left: 16vh;
+    margin-left: 8vh;
 }
 
 #feelslike {
-    margin-left: 16vh;
+    margin-left: 8vh;
 }
+
 #windSpeed {
     margin: 5vh;
 }
+
 #country {
     margin: 5vh;
 }
+
 #region {
     margin: 5vh;
 }
+#windDir {
+    margin: 5vh;
+}
+
+@media screen and (max-width: 800px) {
+   
+    html{
+        height: 150%;
+    }
+    .cardContainer{
+        display: inline;
+    }
+    .tempCard {
+        width: 72vw;
+        margin: 50px;
+    }
+    .windCard {
+        width: 72vw;
+        margin: 50px;
+    }
+  }
