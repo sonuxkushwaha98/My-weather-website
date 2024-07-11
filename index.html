@@ -22,16 +22,48 @@
     </div>
   </nav>
   <div class="cityName d-flex align-items-center, justify-content-center">
-    <h1><span id="cityName"></span></h1>
+    <h1><span id="date"></span></h1>
   </div>
   <div class="cardContainer ">
+
     <div class="tempCard">
-      <div class="image"><img id="tempImg" src="" alt=""> <p id="text"></p></div>
+
+      <div class="image">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#ffffff"
+            fill="none">
+            <path
+              d="M12 22C14.7614 22 17 19.7614 17 17C17 15.3644 16.2147 13.9122 15.0005 13V5.00049C15.0005 4.06815 15.0005 3.60198 14.8481 3.23428C14.6451 2.74451 14.256 2.35537 13.7662 2.15239C13.3985 2 12.9323 2 12 2C11.0677 2 10.6015 2 10.2338 2.15239C9.74402 2.35537 9.35488 2.74451 9.1519 3.23428C8.99951 3.60198 8.99951 4.06815 8.99951 5.00049V13C7.78534 13.9122 7 15.3644 7 17C7 19.7614 9.23858 22 12 22Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            <path
+              d="M12 15C10.8954 15 10 15.8954 10 17C10 18.1046 10.8954 19 12 19C13.1046 19 14 18.1046 14 17C14 15.8954 13.1046 15 12 15ZM12 15V8"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+        </div>
+        <img id="tempImg" src="" alt="">
+        <p id="text"></p>
+      </div>
       <div id="temp"></div>
       <div id="humidity"></div>
       <div id="feelslike"></div>
     </div>
     <div class="windCard">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+          color="#ffffff" fill="none">
+          <path
+            d="M2 5.94145C5.5 9.37313 10.5755 7.90241 11.7324 5.94145C11.9026 5.65301 12 5.31814 12 4.96096C12 3.87795 11.1046 3 10 3C8.89543 3 8 3.87795 8 4.96096"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path
+            d="M17 8.92814C17 7.31097 18.1193 6 19.5 6C20.8807 6 22 7.31097 22 8.92814C22 9.6452 21.7799 10.3021 21.4146 10.8111C19.3463 14.1915 9.2764 12.9164 4 11.8563"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path
+            d="M13.0854 19.8873C13.2913 20.5356 13.8469 21 14.5 21C15.3284 21 16 20.2528 16 19.331C16 19.0176 15.9224 18.7244 15.7873 18.4738C14.4999 15.9925 7.99996 14.3239 2 18.7746"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M19 15.5H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
       <div id="windSpeed"></div>
       <div id="windDir"></div>
       <div id="country"></div>

@@ -1,4 +1,4 @@
-const cityName = document.querySelector('#cityName')
+const date = document.querySelector('#date')
 const temperature = document.querySelector('#temp')
 const humidity = document.querySelector('#humidity')
 const feelsLike = document.querySelector('#feelslike')
@@ -19,13 +19,13 @@ const getWeather =  () => {
       let data = await fetch(`https://api.weatherapi.com/v1/current.json?key=89a8c580db13441ea4f155129240707&q=${value}`);
       data = await data.json();
       console.log(data);
-      temperature.innerHTML = "<b>Temperature</b> " +data.current.temp_c + "&#8451";
+      temperature.innerHTML = `<b>${data.location.name}</b> `+`<h1>${data.current.temp_c}&#8451</h1>`;
       humidity.innerHTML =  "<b>Humidity</b> "+data.current.humidity + '%';
       feelsLike.innerHTML = "<b>Feels like</b> "+data.current.feelslike_c + "&#8451";
       windspeed.innerHTML="<b>Wind speed</b> "+data.current.wind_kph+"Km/h";
       windDir.innerHTML="<b>Wind direction</b> "+data.current.wind_dir
       country.innerHTML="<b>Country</b> "+data.location.country;
-      cityName.innerHTML = "Welcome to "+data.location.name;
+      date.innerHTML = "Date/Time "+data.current.last_updated;
       region.innerHTML="<b>Region</b> "+data.location.region;
       tempImg.src= data.current.condition.icon;
       text.innerHTML=data.current.condition.text

@@ -1,12 +1,12 @@
 body {
-    background-image: url(weather2.jpg);
+    background-image: url(backgroundImage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .cityName{
     margin-top: 20px;
 }
-#cityName {
+#date {
     color: black;
 }
 .cardContainer{
@@ -18,24 +18,26 @@ body {
 .tempCard {
     display: flex;
     flex-direction: column;
-    height: 47vh;
+    height: 55vh;
     width: 35vw;
-    border: 1px solid black;
     border-radius: 1vh;
     margin-right: 20px;
     background-size: contain;
-    background-color: #ffb743c7;
+    background-color: #d3d3d35c;
     background-repeat: no-repeat;
     font-size: large;
-    color: black;
+    color: white;
+    box-shadow: 1px 2px 9px 2px #5b5b5b;
 }
 
-.image {
+.image{
+    display: flex;
+    gap: 20px;
     height: 30%;
     width: 30%;
-    margin: 5px;
-    display: flex;
+    margin: 15px;
 }
+
 #text{
     font-size: 15px;
     margin-top: 20px;
@@ -43,25 +45,31 @@ body {
 }
 
 .windCard {
-    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
     width: 35vw;
-    border: 1px solid black;
     border-radius: 1vh;
     margin-right: 20px;
-    background-image: url('windSpeed.png');
-    background-size: cover;
+    background-size: contain;
+    background-color: #d3d3d35c;
     background-repeat: no-repeat;
     font-size: large;
-    color: black;
+    color: white;
+    box-shadow: 1px 2px 9px 2px #5b5b5b;
 }
 
 #temp {
     margin-left: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #humidity {
     margin: 7vh;
     margin-left: 8vh;
+    margin-top: 20px;
 }
 
 #feelslike {
@@ -74,13 +82,23 @@ body {
 
 #country {
     margin: 5vh;
+    margin-top: 0px;
 }
 
 #region {
     margin: 5vh;
+    margin-top: 0px;
 }
 #windDir {
     margin: 5vh;
+    margin-top: 0px;
+}
+.icon{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 10px;
+    top: 9px;
 }
 
 @media screen and (max-width: 800px) {
