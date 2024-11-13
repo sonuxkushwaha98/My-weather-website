@@ -1,15 +1,23 @@
 body {
-    background-image: url(backgroundImage.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
+    color: #ffffff;
+    /* Ensures the text is readable */
+    font-family: 'Arial', sans-serif;
+    /* Choose a clean font */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
-.cityName{
+
+.cityName {
     margin-top: 20px;
 }
+
 #date {
-    color: black;
+    color: #ffffff;
 }
-.cardContainer{
+
+.cardContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,17 +28,23 @@ body {
     flex-direction: column;
     height: 55vh;
     width: 35vw;
-    border-radius: 1vh;
+    /* border-radius: 1vh;
     margin-right: 20px;
     background-size: contain;
     background-color: #d3d3d35c;
     background-repeat: no-repeat;
     font-size: large;
     color: white;
-    box-shadow: 1px 2px 9px 2px #5b5b5b;
+    box-shadow: 1px 2px 9px 2px #5b5b5b; */
+    background: rgba(255, 255, 255, 0.1);
+    /* Slightly translucent for effect */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.image{
+.image {
     display: flex;
     gap: 20px;
     height: 30%;
@@ -38,7 +52,7 @@ body {
     margin: 15px;
 }
 
-#text{
+#text {
     font-size: 15px;
     margin-top: 20px;
     margin-left: 10px;
@@ -52,11 +66,17 @@ body {
     border-radius: 1vh;
     margin-right: 20px;
     background-size: contain;
-    background-color: #d3d3d35c;
+    /* background-color: #d3d3d35c;
     background-repeat: no-repeat;
     font-size: large;
     color: white;
-    box-shadow: 1px 2px 9px 2px #5b5b5b;
+    box-shadow: 1px 2px 9px 2px #5b5b5b; */
+    background: rgba(255, 255, 255, 0.1);
+    /* Slightly translucent for effect */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #temp {
@@ -69,7 +89,6 @@ body {
 #humidity {
     margin: 7vh;
     margin-left: 8vh;
-    margin-top: 20px;
 }
 
 #feelslike {
@@ -89,11 +108,13 @@ body {
     margin: 5vh;
     margin-top: 0px;
 }
+
 #windDir {
     margin: 5vh;
     margin-top: 0px;
 }
-.icon{
+
+.icon {
     display: flex;
     gap: 10px;
     position: relative;
@@ -101,20 +122,46 @@ body {
     top: 9px;
 }
 
+.stateWeatherContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3vh;
+    margin: 2em;
+    gap: 1em;
+}
+.statesBtn {
+    border: #1a1a1a;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.statesBtn:hover{
+    background-color: #484848;
+    color: #ffffff;
+}
+.form-control{
+    border: 1px solid #000000;
+}
 @media screen and (max-width: 800px) {
-   
-    html{
+
+    html {
         height: 150%;
     }
-    .cardContainer{
+
+    .cardContainer {
         display: inline;
     }
+
     .tempCard {
         width: 72vw;
         margin: 50px;
     }
+
     .windCard {
         width: 72vw;
         margin: 50px;
     }
-  }
+}
